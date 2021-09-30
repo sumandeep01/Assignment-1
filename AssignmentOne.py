@@ -30,7 +30,10 @@ def main():
                 except:
                     print("Invalid amount of shirts")
             
-            
+            totalPrice = count * 9.99
+            # Round off the values to 2 decimal places
+            priceWithTax = round(totalPrice * 1.13, 2)
+            print("Your shirts will cost {} including tax".format(priceWithTax))
         else:
             print("Invalid choice picked.")
     else:
