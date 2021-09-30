@@ -20,6 +20,17 @@ def main():
             except:
                 print("Invalid type of shirt")
 
+        if choice == 1 or choice == 2:
+            print("How many shirts would you like to buy?")
+            # Validate that the choice made is correct
+            while True:
+                try:
+                    count = int(input("Number of Shirts: "))
+                    break
+                except:
+                    print("Invalid amount of shirts")
+            
+            
         else:
             print("Invalid choice picked.")
     else:
